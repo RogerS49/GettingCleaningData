@@ -5,24 +5,25 @@ selected for this analysis, their new variable names, their structure and
 the data in this new tidy data set
 
 ### Describe the run_analysis.R file
+The files required by the analysis file are expected to be in the
+current R working directory under the following structure in an unzipped format
+
+1. "UCI HAR Dataset/activity_labels.txt"
+2. "UCI HAR Dataset/features.txt"           
+3. "UCI HAR Dataset/test/subject_test.txt"  
+4. "UCI HAR Dataset/test/X_test.txt"        
+5. "UCI HAR Dataset/test/y_test.txt"        
+6. "UCI HAR Dataset/train/subject_train.txt"
+7. "UCI HAR Dataset/train/X_train.txt"      
+8. "UCI HAR Dataset/train/y_train.txt"      
+
 At various stages of the analysis a message is printed to the console.
 The stages follow:- 
 
+
 #### Load the data on to the system and read files into R
 + Load packages required
-+ Create temporary Directory and File for ext ".zip
-+ Download the zip file to temporary directory
-+ Read the zip file and create a list of the files names to extract
-+ unzip the files from the list
 + Read into R all files from the list
-+ Close the connections (unlink)
-
-#####Comment: 
-This ensures the data is reproducible. When R is closed the
-temporary directory and file will be **removed** from the users
-system. The output of running the analysis file will remain in the
-current working directory of R. This may also take a little longer to
-process the analysis so the user should be aware. 
 
 #### Merge the Activity,Subject, Test and Train data sets
 + Rename the variable names of the subject and activity data sets
