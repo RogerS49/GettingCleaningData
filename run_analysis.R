@@ -1,10 +1,4 @@
 run_analysis <- function () {
-    ## We start with the access to the files. This part create a tempory
-    ## directory and a tempfile and download the zip file to that in 
-    ## that directory. We then unzip that file and load 8 files into R
-    ##. When loaded the connections to the unzipped files and it's 
-    ## contents are closed and when R is close the tempory file and
-    ## directory are removed.
     
     print("Preparing the Analysis environment ...")
     library("dplyr"); library("reshape2")
