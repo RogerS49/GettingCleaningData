@@ -36,8 +36,8 @@ a column variable that makes up the rest of the data set. The column
 id's run from 3 to 81 consecutively. The value in each column row is 
 the average of each variable for each activity and each subject.
 
-|Id's| Old Label| |New Label|
-|:---|:------|:----:|------:|
+|Id's Old Label|New Label|
+|:----------|---------:|
  1.	     tBodyAcc-mean()-X               |   timeBodyAccMeanOfAxis.X 
  2. 	 tBodyAcc-mean()-Y               |   timeBodyAccMeanOfAxis.Y 
  3. 	 tBodyAcc-mean()-Z               |   timeBodyAccMeanOfAxis.Z 
