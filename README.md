@@ -17,7 +17,8 @@ The stages follow:-
 + Read into R all files from the list
 + Close the connections (unlink)
 
-#####Comment: This ensures the data is reproducible. When R is closed the
+#####Comment: 
+This ensures the data is reproducible. When R is closed the
 temporary directory and file will be **removed** from the users
 system. The output of running the analysis file will remain in the
 current working directory of R. This may also take a little longer to
@@ -29,8 +30,8 @@ process the analysis so the user should be aware.
 + Column bind the activity.train, subject.train and train.data 
 + Row bind the resulting test and training column accumulations
 + Perform a test that the row bind is correct by taking the top 
-..of the test data set and the bottom of the training data set and
-..checking if they equal the resulting rows in the binded data set.
+of the test data set and the bottom of the training data set and
+checking if they equal the resulting rows in the binded data set.
 
 #### Extract from the Merged Data Set the Required Variables
 + Get the id's from the features of the columns required
@@ -44,12 +45,13 @@ process the analysis so the user should be aware.
 #### Make the Column Names
 + Start with the original feature names for the selected columns
 + Parse the original names through a serious of regular expressions and alter
-..some of the name
+some of the name
 + Each pass alters different parts of the names as new labels
 + Add the Activity and Subject names and apply as column names
 + Arrange the data by Subject and Activity
 
-#####Comment: An attempt to make the names more readable whilst keeping them
+#####Comment:
+An attempt to make the names more readable whilst keeping them
 close to the orignal names. This helps keep the data owners in tune with the 
 changes without too much confusion.
 
