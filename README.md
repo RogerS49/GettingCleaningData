@@ -9,13 +9,13 @@ At various stages of the analysis a message is printed to the console.
 The stages follow:- 
 
 #### Load the data on to the system and read files into R
-+Load packages required
-+Create temporary Directory and File for ext ".zip
-+Download the zip file to temporary directory
-+Read the zip file and create a list of the files names to extract
-+unzip the files from the list
-+Read into R all files from the list
-+Close the connections (unlink)
++ Load packages required
++ Create temporary Directory and File for ext ".zip
++ Download the zip file to temporary directory
++ Read the zip file and create a list of the files names to extract
++ unzip the files from the list
++ Read into R all files from the list
++ Close the connections (unlink)
 
 #####Comment: This ensures the data is reproducible. When R is closed the
 temporary directory and file will be **removed** from the users
@@ -24,30 +24,30 @@ current working directory of R. This may also take a little longer to
 process the analysis so the user should be aware. 
 
 #### Merge the Activity,Subject, Test and Train data sets
-+Rename the variable names of the subject and activity data sets
-+Column bind the activity.test, subject.test and test.data 
-+Column bind the activity.train, subject.train and train.data 
-+Row bind the resulting test and training column accumulations
-+Perform a test that the row bind is correct by taking the top 
-of the test data set and the bottom of the training data set and
-checking if they equal the resulting rows in the binded data set.
++ Rename the variable names of the subject and activity data sets
++ Column bind the activity.test, subject.test and test.data 
++ Column bind the activity.train, subject.train and train.data 
++ Row bind the resulting test and training column accumulations
++ Perform a test that the row bind is correct by taking the top 
+..of the test data set and the bottom of the training data set and
+..checking if they equal the resulting rows in the binded data set.
 
 #### Extract from the Merged Data Set the Required Variables
-+Get the id's from the features of the columns required
-+Coerce the id's to match the merged data set
-+Add to that the id's of the activity and subject columns
-+Split the merged data set into new required data set
++ Get the id's from the features of the columns required
++ Coerce the id's to match the merged data set
++ Add to that the id's of the activity and subject columns
++ Split the merged data set into new required data set
 
 #### Create labels for the Activity column
-+Create activity as a factor column based on the file activity_labels
++ Create activity as a factor column based on the file activity_labels
 
 #### Make the Column Names
-+Start with the original feature names for the selected columns
-+Parse the original names through a serious of regular expressions and alter
-some of the name
-+Each pass alters different parts of the names as new labels
-+Add the Activity and Subject names and apply as column names
-+Arrange the data by Subject and Activity
++ Start with the original feature names for the selected columns
++ Parse the original names through a serious of regular expressions and alter
+..some of the name
++ Each pass alters different parts of the names as new labels
++ Add the Activity and Subject names and apply as column names
++ Arrange the data by Subject and Activity
 
 #####Comment: An attempt to make the names more readable whilst keeping them
 close to the orignal names. This helps keep the data owners in tune with the 
@@ -55,13 +55,13 @@ changes without too much confusion.
 
 
 #### Create and Write Out an Independent Data Set
-+Group the data by Subject and Activity
-+Generate mean data for each Subject and Activity
-+Write to the current working directory this data in a file **mean_data_set.txt**
++ Group the data by Subject and Activity
++ Generate mean data for each Subject and Activity
++ Write to the current working directory this data in a file **mean_data_set.txt**
 
 
 
-#### None of the Inertial Signals data was used in this data set
+### None of the Inertial Signals data was used in this data set
 
 
 
