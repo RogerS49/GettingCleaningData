@@ -9,7 +9,8 @@ data from that specification with regards to the features required for the
 
 81  Variables      180  Observations
 
-Is described below one section per variable.
+Each variable is a column in the data set. The first two columns are described first. 
+The remainder are described on mass in the third section and have column id's 3 to 81
 
 ###The First variable column Activity Codes
 1. WALKING
@@ -28,13 +29,15 @@ on subjects required.
 
 
 ### The Portion Used of the Original Feature Data Set
-### With the Modified Feature Names Of The Portion Selected
+#### With the Modified Feature Names Of The Portion Selected
 This list shows the Id's from the original set, their old value names and 
 the new labels on each row of the table below. Each row identifies
 a column variable that makes up the rest of the data set. The column
 id's run from 3 to 81 consecutively. The value in each column row is 
 the average of each variable for each activity and each subject.
 
+|Id's| Old Label| |New Label|
+|:---|:------|:----:|------:|
  1.	     tBodyAcc-mean()-X               |   timeBodyAccMeanOfAxis.X 
  2. 	 tBodyAcc-mean()-Y               |   timeBodyAccMeanOfAxis.Y 
  3. 	 tBodyAcc-mean()-Z               |   timeBodyAccMeanOfAxis.Z 
